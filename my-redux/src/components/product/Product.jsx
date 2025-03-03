@@ -15,7 +15,7 @@ function Product() {
              </div>
              <div className='pro-text' >
                 <p>$120</p>
-                <h4> 50 </h4>
+                <h4> 500 </h4>
              </div>
        </div>
     </div>
