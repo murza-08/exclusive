@@ -1,6 +1,8 @@
 .card{
     margin-top: 50px;
+    display: block;
 }
+
 .card-product{
     display: flex;
     justify-content: space-between;
