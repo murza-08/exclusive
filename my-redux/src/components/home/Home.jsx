@@ -12,7 +12,7 @@ function Home() {
   async function getPro(){
     try{
       const res = await axios.get( API )
-      setProduct( res.data.slice(0, 8  )
+      setProduct( res.data.slice(0,   )
       )  }
       
     catch( error ){
