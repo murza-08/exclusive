@@ -4,17 +4,19 @@ import { CiSearch } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
+import { Link } from 'react-router-dom';
 
 
 
 
 function Header() {
+    //useSelector
   return (
     <div className='header container'>
         <div className="header-left">
             <h1>exclusive</h1>
             <ul>
-                <li> <a href=""></a> home </li>
+                <li> <a href=""></a> home  </li>
                 <li> <a href=""></a> about </li>
                 <li> <a href=""></a> contact </li>
                 <li> <a href=""></a> sign up </li>
@@ -33,15 +35,15 @@ function Header() {
                      <CiHeart  className='icon-react'/>
                      </div>
                 </a>
-                    <a href="">
+                    <Link to="/cartpage" >
                         <div className="icon">
                         <IoCartOutline className='icon-react' />
                           <div className='count'> 0 </div>
                         </div>
-                    </a>
+                    </Link>
                     <a href="">
                         <div className="icon">
-                        <CiUser className='icon-react' />
+                        <CiUser className='icon-react' /> 
                         </div>
                     </a>
             </div>

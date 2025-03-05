@@ -2,6 +2,7 @@ import React from "react";
 import "./Product.css";
 
 function Product({ data }) {
+  //useDispatch
   return (
     <div className="product">
       <div className="product-card">

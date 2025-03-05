@@ -9,8 +9,9 @@ function Layout() {
     <div>
       <Header/>
       <Outlet/>
+       <Cart/>
       <Footer/>
-      <Cart/>
+     
     </div>
   )
 }
