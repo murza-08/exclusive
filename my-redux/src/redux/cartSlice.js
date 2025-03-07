@@ -8,7 +8,7 @@ const cartSlise = createSlise({
     },
     reducers: {
         addCart: ( state, action) => {
-            const findFlower = state.cartitem.find( (el) => el.id == action.payload.ad )
+            const findFlower = state.cartitem.find( ( el ) => el.id == action.payload.ad )
             if( !findFlower ) {
                 state.cartitem.push( action.payload )
             }
