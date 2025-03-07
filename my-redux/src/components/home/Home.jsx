@@ -30,7 +30,7 @@ function Home() {
       <div className="flower">
         {product.slice( 0, 8).map( ( pro ) => {
           return(
-            <Product key={ pro.id } data={ pro }/>
+            <Product key={ pro.id } data={ pr0 }/>
           )
         } )
         }
