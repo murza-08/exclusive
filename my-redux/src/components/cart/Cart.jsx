@@ -4,17 +4,17 @@ import './cart.css'
 import { useSelector } from 'react-redux'
 
 function Cart() {
-   const {cartItem} = useSelector( ( state )  => state.flower )
+   const {cartitem} = useSelector( ( state )  => state.flower )
   
   return (
     
       <div className='card container'>
       <div className="basket">
      {
-       cartItem.map( ( item ) =>  (
+       cartitem.map( ( item ) =>  (
         <div className="card-product">
         <div className="card-block">
-          <img src={ item.imageUr }  className='cardImg'/>
+          <img src={ item.imageUrl }  className='cardImg'/>
            <p> { item.title } </p>          
         </div>
         <p> { item.price } </p>

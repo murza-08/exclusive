@@ -5,12 +5,13 @@ import { CiHeart } from "react-icons/ci";
 import { CiUser } from "react-icons/ci";
 import { IoCartOutline } from "react-icons/io5";
 import { Link } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 
 
 
 function Header() {
-    //useSelector
+    const  {cartitem} = useSelector (  ( state ) => state.flower  )
   return (
     <div className='header container'>
         <div className="header-left">
@@ -38,7 +39,7 @@ function Header() {
                     <Link to="/cartpage" >
                         <div className="icon">
                         <IoCartOutline className='icon-react' />
-                          <div className='count'> 0 </div>
+                          <div className='count'> { cartitem.length } </div>
                         </div>
                     </Link>
                     <a href="">

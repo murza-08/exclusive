@@ -1,9 +1,9 @@
-import {createSlise, isAction} from '@reduxjs/toolkit'
+import { createSlice } from '@reduxjs/toolkit'
 
 
-const cartSlise = createSlise({
+const cartSlise = createSlice({
     name: 'flower',
-    initialSlise: {
+    initialState: {
         cartitem: []
     },
     reducers: {
@@ -16,5 +16,6 @@ const cartSlise = createSlise({
     }
 })
 
-export const { addCart } = cartSlise.action
+export const { addCart } = cartSlise.actions
 export default cartSlise.reducer
+

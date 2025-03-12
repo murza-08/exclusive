@@ -1,15 +1,17 @@
 import React from "react";
 import "./Product.css";
+import { useDispatch } from "react-redux";
+import { addCart } from "../../redux/cartSlice";
 
 function Product({ data }) {
-  //useDispatch
+    const dispatch = useDispatch(  )
   return (
     <div className="product">
       <div className="product-card">
         <div className="pro-img">
           <img  src={data.imageUrl} /> 
         </div>
-        <button className="pro-btn">Add to Cart</button>
+        <button className="pro-btn" onClick={ () => dispatch( addCart( data )  ) } >Add to Cart</button>
         <div className="pro-title">
           <h6>{ data.title }</h6>
         </div>
